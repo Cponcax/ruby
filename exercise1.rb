@@ -9,10 +9,15 @@ a = 0
 
 while a <= 99
   a += 1
-  if a/3 == 1 
-    puts "Fizz #{a}"
-  elsif a/5 == 1
-    puts "FizzBuzz #{a}"
+
+  if a%3 == 0 && a%5 == 0
+    puts "FizzBuzz"
+  elsif a%5 == 0
+    puts "Buzz"
+  elsif a%3 == 0
+    puts "Fizz" 
+  else
+    puts a 
   end
-  puts a 
+   
 end 
